@@ -12,8 +12,6 @@ namespace ThemePreloadwithSplashscreen
     /// </summary>
     public partial class App : Application
     {
-        internal static Stopwatch stopwatch = new Stopwatch();
-        internal static Stopwatch preloadStopwatch = new Stopwatch();
 
         static Type[] types;
         static App()
