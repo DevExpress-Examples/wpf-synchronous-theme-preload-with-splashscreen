@@ -18,13 +18,13 @@ namespace ThemePreloadwithSplashscreen
 
         private void MainWindow_ContentRendered(object sender, EventArgs e)
         {
-            App.stopwatch.Stop();
+            stopwatch.Stop();
             stopwatch.Stop();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            App.stopwatch.Start();
+            stopwatch.Start();
             var richWindow = new RichWindow();
             //App.Current.MainWindow = richWindow;
             richWindow.Show();
