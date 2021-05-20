@@ -13,18 +13,9 @@ namespace ThemePreloadwithSplashscreen
         public MainWindow()
         {
             InitializeComponent();
-            ContentRendered += MainWindow_ContentRendered;
         }
-
-        private void MainWindow_ContentRendered(object sender, EventArgs e)
-        {
-            App.stopwatch.Stop();
-            stopwatch.Stop();
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            App.stopwatch.Start();
             var complexWindow = new ComplexWindow();
             complexWindow.Show();
         }
