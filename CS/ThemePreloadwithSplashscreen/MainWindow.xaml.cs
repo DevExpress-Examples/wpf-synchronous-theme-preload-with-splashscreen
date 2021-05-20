@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Windows;
 
@@ -13,22 +13,11 @@ namespace ThemePreloadwithSplashscreen
         public MainWindow()
         {
             InitializeComponent();
-            ContentRendered += MainWindow_ContentRendered;
         }
-
-        private void MainWindow_ContentRendered(object sender, EventArgs e)
-        {
-            stopwatch.Stop();
-            stopwatch.Stop();
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            stopwatch.Start();
-            var richWindow = new RichWindow();
-            //App.Current.MainWindow = richWindow;
-            richWindow.Show();
-            //Close();
+            var complexWindow = new ComplexWindow();
+            complexWindow.Show();
         }
     }
 }
