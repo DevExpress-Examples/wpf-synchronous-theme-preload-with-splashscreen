@@ -306,3 +306,9 @@ TesterMetadata.xml
 
 # Local server for npm packages
 .npmrc
+
+
+# ProjectUpdrade & TryConvert files
+*.csproj.old
+*.vbproj.old
+*.bak
