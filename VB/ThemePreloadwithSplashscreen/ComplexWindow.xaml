@@ -1,5 +1,5 @@
 <dx:ThemedWindow
-    x:Class="ThemePreloadwithSplashscreen.RichWindow"
+    x:Class="ThemePreloadwithSplashscreen.ComplexWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -10,7 +10,7 @@
     xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
     xmlns:local="clr-namespace:ThemePreloadwithSplashscreen"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="RichWindow"
+    Title="ComplexWindow"
     Width="800"
     Height="680"
     mc:Ignorable="d">
@@ -32,7 +32,6 @@
         </DataTemplate>
     </dx:ThemedWindow.Resources>
     <Grid>
-        <!--<dxre:RichEditControl CommandBarStyle="Ribbon" DocumentSource="pack://application:,,,/ThemePreloadwithSplashscreen;component/Data/Demo.docx" />-->
         <dxlc:LayoutControl VerticalAlignment="Stretch" Orientation="Vertical">
             <dxlc:LayoutGroup Orientation="Horizontal">
                 <dxlc:LayoutGroup Orientation="Vertical">
