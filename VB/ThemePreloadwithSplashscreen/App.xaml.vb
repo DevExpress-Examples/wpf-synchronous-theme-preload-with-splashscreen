@@ -2,14 +2,10 @@ Imports DevExpress.Xpf.Core
 Imports DevExpress.Xpf.Grid
 Imports DevExpress.Xpf.LayoutControl
 Imports System
-Imports System.Diagnostics
 Imports System.Windows
 
 Namespace ThemePreloadwithSplashscreen
 
-    ''' <summary>
-    ''' Interaction logic for App.xaml
-    ''' </summary>
     Public Partial Class App
         Inherits Application
 

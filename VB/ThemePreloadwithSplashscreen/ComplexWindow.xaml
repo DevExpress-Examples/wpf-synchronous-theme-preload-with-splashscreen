@@ -115,7 +115,7 @@
                                 Mask="(999) 000-0000"
                                 MaskType="Simple"
                                 MaskUseAsDisplayFormat="True">
-                                <dxe:ImageButtonInfo Glyph="/DevExpress.Images.v21.1;component/SvgImages/Outlook Inspired/Glyph_Phone.svg" />
+                                <dxe:ImageButtonInfo Glyph="/DevExpress.Images.v22.2;component/SvgImages/Outlook Inspired/Glyph_Phone.svg" />
                             </dxe:ButtonEdit>
                         </dxlc:LayoutItem>
                         <dxlc:LayoutItem AddColonToLabel="True" Label="Mobile Phone">
@@ -126,7 +126,7 @@
                                 Mask="(999) 000-0000"
                                 MaskType="Simple"
                                 MaskUseAsDisplayFormat="True">
-                                <dxe:ImageButtonInfo Glyph="/DevExpress.Images.v21.1;component/SvgImages/Icon Builder/Electronics_PhoneIphone.svg" />
+                                <dxe:ImageButtonInfo Glyph="/DevExpress.Images.v22.2;component/SvgImages/Icon Builder/Electronics_PhoneIphone.svg" />
                             </dxe:ButtonEdit>
                         </dxlc:LayoutItem>
                         <dxlc:LayoutItem AddColonToLabel="True" Label="Email">
@@ -137,7 +137,7 @@
                                 Mask="(\w|[\.\-])+@(\w|[\-]+\.)*(\w|[\-]){2,63}\.[a-zA-Z]{2,4}"
                                 MaskType="RegEx"
                                 ValidateOnTextInput="True">
-                                <dxe:ImageButtonInfo Glyph="/DevExpress.Images.v21.1;component/SvgImages/Outlook Inspired/Glyph_Mail.svg" />
+                                <dxe:ImageButtonInfo Glyph="/DevExpress.Images.v22.2;component/SvgImages/Outlook Inspired/Glyph_Mail.svg" />
                             </dxe:ButtonEdit>
                         </dxlc:LayoutItem>
                         <dxlc:LayoutItem AddColonToLabel="True" Label="Skype">
@@ -145,7 +145,7 @@
                                 AllowDefaultButton="False"
                                 EditValue="{Binding Path=Skype, Mode=TwoWay}"
                                 IsTextEditable="True">
-                                <dxe:ImageButtonInfo Glyph="/DevExpress.Images.v21.1;component/SvgImages/HybridDemoIcons/Editors/HybridDemo_Skype.svg" />
+                                <dxe:ImageButtonInfo Glyph="/DevExpress.Images.v22.2;component/SvgImages/HybridDemoIcons/Editors/HybridDemo_Skype.svg" />
                             </dxe:ButtonEdit>
                         </dxlc:LayoutItem>
                     </dxlc:LayoutGroup>
