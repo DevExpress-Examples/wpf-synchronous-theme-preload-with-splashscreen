@@ -5,7 +5,7 @@
 <!-- default badges end -->
 # Synchronously Preload WPF Themes Within Splashscreen
 
-This example displays the [Splash Screen Manager](https://docs.devexpress.com/WPF/401685/controls-and-libraries/windows-and-utility-controls/splash-screen-manager) on the application startup and preloads Data Grid and LayoutControl theme resources while the splashscreen is displayed.
+This example displays the [Splash Screen Manager](https://docs.devexpress.com/WPF/401685/controls-and-libraries/windows-and-utility-controls/splash-screen-manager) on application startup and preloads Data Grid and LayoutControl theme resources while the splash screen is displayed.
 
 Theme preload slows down the application startup but speeds up the startup of subsequent windows that use preloaded theme resources.
 
