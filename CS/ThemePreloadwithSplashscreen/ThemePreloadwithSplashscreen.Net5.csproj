@@ -12,9 +12,6 @@
     <DefaultItemExcludes>obj*/**</DefaultItemExcludes>
   </PropertyGroup>
   <ItemGroup>
-    <Resource Include="Data\Demo.docx" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Data\w03.jpg" />
   </ItemGroup>
   <ItemGroup>
