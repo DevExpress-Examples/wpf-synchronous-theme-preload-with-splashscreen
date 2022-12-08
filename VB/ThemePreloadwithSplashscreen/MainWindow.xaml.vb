@@ -1,15 +1,9 @@
-Imports System.Diagnostics
 Imports System.Windows
 
 Namespace ThemePreloadwithSplashscreen
 
-    ''' <summary>
-    ''' Interaction logic for MainWindow.xaml
-    ''' </summary>
     Public Partial Class MainWindow
         Inherits Window
-
-        Friend Shared stopwatch As Stopwatch = New Stopwatch()
 
         Public Sub New()
             Me.InitializeComponent()
