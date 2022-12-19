@@ -14,7 +14,7 @@ Namespace ThemePreloadwithSplashscreen
         Shared Sub New()
             types = New Type() {GetType(GridControl), GetType(LayoutControl)}
             Call SplashScreenManager.CreateThemed().ShowOnStartup()
-            Call ThemeManager.PreloadThemeResourceAsync("Office2019Colorful", runTypeInitializers:=False).Wait()
+            ThemeManager.PreloadThemeResource("Office2019Colorful")
         End Sub
     End Class
 End Namespace
