@@ -11,7 +11,7 @@ namespace ThemePreloadwithSplashscreen {
         static App() {
             types = new Type[] { typeof(GridControl), typeof(LayoutControl) };
             SplashScreenManager.CreateThemed().ShowOnStartup();
-            ThemeManager.PreloadThemeResourceAsync("Office2019Colorful", runTypeInitializers: false).Wait();
+            ThemeManager.PreloadThemeResource("Office2019Colorful");
         }
     }
 }
