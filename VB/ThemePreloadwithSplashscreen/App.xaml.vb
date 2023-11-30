@@ -1,7 +1,5 @@
 Imports DevExpress.Xpf.Core
-Imports DevExpress.Xpf.Grid
-Imports DevExpress.Xpf.LayoutControl
-Imports System
+Imports System.Runtime.CompilerServices
 Imports System.Windows
 
 Namespace ThemePreloadwithSplashscreen
@@ -9,12 +7,14 @@ Namespace ThemePreloadwithSplashscreen
     Public Partial Class App
         Inherits Application
 
-        Private Shared types As Type()
-
         Shared Sub New()
-            types = New Type() {GetType(GridControl), GetType(LayoutControl)}
+            Call PreloadThemes()
+        End Sub
+
+        <MethodImpl(MethodImplOptions.NoInlining)>
+        Private Shared Sub PreloadThemes()
             Call SplashScreenManager.CreateThemed().ShowOnStartup()
-            ThemeManager.PreloadThemeResource("Office2019Colorful")
+            Call ApplicationThemeHelper.Preload(PreloadCategories.Grid, PreloadCategories.LayoutControl)
         End Sub
     End Class
 End Namespace
