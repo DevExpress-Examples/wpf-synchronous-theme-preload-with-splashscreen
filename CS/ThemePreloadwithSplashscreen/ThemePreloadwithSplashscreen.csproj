@@ -35,26 +35,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.Desktop.v23.1" />
-    <Reference Include="DevExpress.Drawing.v23.1" />
-    <Reference Include="DevExpress.Data.v23.1" />
-    <Reference Include="DevExpress.Images.v23.1" />
-    <Reference Include="DevExpress.Mvvm.v23.1" />
-    <Reference Include="DevExpress.Office.v23.1.Core" />
-    <Reference Include="DevExpress.Pdf.v23.1.Core" />
-    <Reference Include="DevExpress.Printing.v23.1.Core" />
-    <Reference Include="DevExpress.RichEdit.v23.1.Core" />
-    <Reference Include="DevExpress.Xpf.Core.v23.1" />
-    <Reference Include="DevExpress.Xpf.Docking.v23.1" />
-    <Reference Include="DevExpress.Xpf.Grid.v23.1" />
-    <Reference Include="DevExpress.Xpf.Grid.v23.1.Core" />
-    <Reference Include="DevExpress.Xpf.Grid.v23.1.Extensions" />
-    <Reference Include="DevExpress.Xpf.Layout.v23.1.Core" />
-    <Reference Include="DevExpress.Xpf.LayoutControl.v23.1" />
-    <Reference Include="DevExpress.Xpf.Office.v23.1" />
-    <Reference Include="DevExpress.Xpf.Printing.v23.1" />
-    <Reference Include="DevExpress.Xpf.Ribbon.v23.1" />
-    <Reference Include="DevExpress.Xpf.RichEdit.v23.1" />
+    <Reference Include="DevExpress.Data.Desktop.v23.2" />
+    <Reference Include="DevExpress.Drawing.v23.2" />
+    <Reference Include="DevExpress.Data.v23.2" />
+    <Reference Include="DevExpress.Images.v23.2" />
+    <Reference Include="DevExpress.Mvvm.v23.2" />
+    <Reference Include="DevExpress.Office.v23.2.Core" />
+    <Reference Include="DevExpress.Pdf.v23.2.Core" />
+    <Reference Include="DevExpress.Printing.v23.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v23.2.Core" />
+    <Reference Include="DevExpress.Xpf.Core.v23.2" />
+    <Reference Include="DevExpress.Xpf.Docking.v23.2" />
+    <Reference Include="DevExpress.Xpf.Grid.v23.2" />
+    <Reference Include="DevExpress.Xpf.Grid.v23.2.Core" />
+    <Reference Include="DevExpress.Xpf.Grid.v23.2.Extensions" />
+    <Reference Include="DevExpress.Xpf.Layout.v23.2.Core" />
+    <Reference Include="DevExpress.Xpf.LayoutControl.v23.2" />
+    <Reference Include="DevExpress.Xpf.Office.v23.2" />
+    <Reference Include="DevExpress.Xpf.Controls.v23.2" />
+    <Reference Include="DevExpress.Xpf.Printing.v23.2" />
+    <Reference Include="DevExpress.Xpf.Ribbon.v23.2" />
+    <Reference Include="DevExpress.Xpf.RichEdit.v23.2" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />

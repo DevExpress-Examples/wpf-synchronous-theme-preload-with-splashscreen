@@ -7,14 +7,11 @@ using System.Windows.Media.Imaging;
 using DevExpress.Mvvm;
 using DevExpress.Mvvm.DataAnnotations;
 
-namespace ThemePreloadwithSplashscreen
-{
-    static class EmployeeImageHelper
-    {
+namespace ThemePreloadwithSplashscreen {
+    static class EmployeeImageHelper {
         public const string ImagesPath = "pack://application:,,,/DevExpress.Images.v" + AssemblyInfo.VersionShort + ";component/SvgImages/";
     }
-    public enum PersonPrefix
-    {
+    public enum PersonPrefix {
         [Image(EmployeeImageHelper.ImagesPath + "Outlook Inspired/Doctor.svg")]
         Dr,
         [Image(EmployeeImageHelper.ImagesPath + "Outlook Inspired/Customers.svg")]
@@ -27,8 +24,7 @@ namespace ThemePreloadwithSplashscreen
         Mrs
     }
 
-    public enum EmployeeStatus
-    {
+    public enum EmployeeStatus {
         Salaried,
         Commission,
         Terminated,
@@ -37,8 +33,7 @@ namespace ThemePreloadwithSplashscreen
     public enum EmployeeDepartment { Sales, Support, Shipping, Engineering, HumanResources, Management, IT }
     public enum StateEnum { CA, AR, AL, AK, AZ, CO, CT, DE, DC, FL, GA, HI, ID, IL, IN, IA, KS, KY, LA, ME, MD, MA, MI, MN, MS, MO, MT, NE, NV, NH, NJ, NM, NY, NC, OH, OK, OR, PA, RI, SC, SD, TN, TX, UT, VT, VA, WA, WV, WI, WY, ND }
 
-    public enum EmployeeTaskPriority
-    {
+    public enum EmployeeTaskPriority {
         [Image(EmployeeImageHelper.ImagesPath + "Outlook Inspired/LowPriority.svg")]
         Low,
         [Image(EmployeeImageHelper.ImagesPath + "Outlook Inspired/NormalPriority.svg")]
@@ -49,8 +44,7 @@ namespace ThemePreloadwithSplashscreen
         Urgent
     }
 
-    public class EmployeeTask
-    {
+    public class EmployeeTask {
         public int Completion { get; set; }
         public string Description { get; set; }
         public DateTime? DueDate { get; set; }
@@ -58,14 +52,12 @@ namespace ThemePreloadwithSplashscreen
         public DateTime? StartDate { get; set; }
         public string Subject { get; set; }
     }
-    public class Evaluation
-    {
+    public class Evaluation {
         public DateTime CreatedOn { get; set; }
         public string Manager { get; set; }
         public string Subject { get; set; }
     }
-    public class Address : ViewModelBase
-    {
+    public class Address : ViewModelBase {
         string city;
         string line;
         StateEnum state;
@@ -74,12 +66,10 @@ namespace ThemePreloadwithSplashscreen
         public string Line { get { return line; } set { SetProperty(ref line, value, "Line"); } }
         public StateEnum State { get { return state; } set { SetProperty(ref state, value, "State"); } }
         public string ZipCode { get { return zipCode; } set { SetProperty(ref zipCode, value, "ZipCode"); } }
-        public Address()
-        {
+        public Address() {
             Initialize();
         }
-        void Initialize()
-        {
+        void Initialize() {
             Line = "6755 Newlin Ave";
             City = "Whittier";
             State = StateEnum.AK;
@@ -87,8 +77,7 @@ namespace ThemePreloadwithSplashscreen
         }
     }
 
-    public class EmployeeViewModel : ViewModelBase, IDataErrorInfo
-    {
+    public class EmployeeViewModel : ViewModelBase, IDataErrorInfo {
         Address address;
         List<EmployeeTask> assignedTasks;
         DateTime? birthDate;
@@ -126,12 +115,10 @@ namespace ThemePreloadwithSplashscreen
         public string Skype { get { return skype; } set { SetProperty(ref skype, value, "Skype"); } }
         public EmployeeStatus Status { get { return status; } set { SetProperty(ref status, value, "Status"); } }
         public string Title { get { return title; } set { SetProperty(ref title, value, "Title"); } }
-        public EmployeeViewModel()
-        {
+        public EmployeeViewModel() {
             Initialize();
         }
-        void Initialize()
-        {
+        void Initialize() {
             Address = new Address();
             FirstName = "Leah";
             LastName = "Simpson";
@@ -149,12 +136,10 @@ namespace ThemePreloadwithSplashscreen
             GenerateAssignedTasks();
             GenerateEvaluations();
         }
-        void RaiseFullNamePropertyChanged()
-        {
+        void RaiseFullNamePropertyChanged() {
             RaisePropertyChanged("FullName");
         }
-        void GenerateAssignedTasks()
-        {
+        void GenerateAssignedTasks() {
             AssignedTasks = new List<EmployeeTask>();
             EmployeeTask employeeTask1 = new EmployeeTask();
             employeeTask1.Priority = EmployeeTaskPriority.Normal;
@@ -197,17 +182,14 @@ namespace ThemePreloadwithSplashscreen
             employeeTask5.Completion = 15;
             AssignedTasks.Add(employeeTask5);
         }
-        void GenerateEvaluations()
-        {
+        void GenerateEvaluations() {
             Random r = new Random();
             Evaluations = new List<Evaluation>();
             for (int i = HireDate.Value.Year; i < DateTime.Now.Year; i++)
                 Evaluations.Add(new Evaluation() { CreatedOn = new DateTime(i, r.Next(1, 12), r.Next(1, 25)), Manager = "Bart Simpson", Subject = string.Format("{0} Employee Review", i) });
         }
-        public string this[string columnName]
-        {
-            get
-            {
+        public string this[string columnName] {
+            get {
                 if (columnName == "FirstName" && string.IsNullOrEmpty(FirstName))
                     return "The First Name field is required.";
                 if (columnName == "LastName" && string.IsNullOrEmpty(LastName))
@@ -221,10 +203,8 @@ namespace ThemePreloadwithSplashscreen
                 return null;
             }
         }
-        public string Error
-        {
-            get
-            {
+        public string Error {
+            get {
                 string error =
                     this["FirstName"] +
                     this["LastName"] +
@@ -237,16 +217,13 @@ namespace ThemePreloadwithSplashscreen
             }
         }
     }
-    public class OverviewDemoViewModel : ViewModelBase
-    {
+    public class OverviewDemoViewModel : ViewModelBase {
         public EmployeeViewModel Employee { get; set; }
     }
 
-    public class EnumToItemSourceProvider : MarkupExtension
-    {
+    public class EnumToItemSourceProvider : MarkupExtension {
         public Type EnumType { get; set; }
-        public override object ProvideValue(IServiceProvider serviceProvider)
-        {
+        public override object ProvideValue(IServiceProvider serviceProvider) {
             List<object> result = new List<object>();
             Array values = Enum.GetValues(EnumType);
             foreach (var value in values)
