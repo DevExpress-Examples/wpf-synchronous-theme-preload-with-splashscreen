@@ -134,7 +134,7 @@
                                 AllowDefaultButton="False"
                                 EditValue="{Binding Path=Email, Mode=TwoWay, ValidatesOnDataErrors=True}"
                                 IsTextEditable="True"
-                                Mask="(\w|[\.\-])+@(\w|[\-]+\.)*(\w|[\-]){2,63}\.[a-zA-Z]{2,4}"
+                                Mask="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"
                                 MaskType="RegEx"
                                 ValidateOnTextInput="True">
                                 <dxe:ImageButtonInfo Glyph="{dx:DXImage 'SvgImages/Outlook Inspired/Glyph_Mail.svg'}" />
