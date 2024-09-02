@@ -1,6 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <OutputType>WinExe</OutputType>
     <RootNamespace>ThemePreloadwithSplashscreen</RootNamespace>
     <AssemblyName>ThemePreloadwithSplashscreen</AssemblyName>
@@ -14,22 +15,22 @@
     <Resource Include="Data\w03.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Data" Version="23.2.*-*" />
-    <PackageReference Include="DevExpress.Data.Desktop" Version="23.2.*-*" />
-    <PackageReference Include="DevExpress.Images" Version="23.2.*-*" />
-    <PackageReference Include="DevExpress.Mvvm" Version="23.2.*-*" />
-    <PackageReference Include="DevExpress.Office.Core" Version="23.2.*-*" />
-    <PackageReference Include="DevExpress.Pdf.Core" Version="23.2.*-*" />
-    <PackageReference Include="DevExpress.Printing.Core" Version="23.2.*-*" />
-    <PackageReference Include="DevExpress.RichEdit.Core" Version="23.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Core" Version="23.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Docking" Version="23.2.*-*" />
-	<PackageReference Include="DevExpress.Wpf.Grid.Core" Version="23.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.LayoutControl" Version="23.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Office" Version="23.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Printing" Version="23.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Ribbon" Version="23.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.RichEdit" Version="23.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="23.2.*-*" />
+    <PackageReference Include="DevExpress.Data" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Data.Desktop" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Images" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Mvvm" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Office.Core" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Pdf.Core" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Printing.Core" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.RichEdit.Core" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Core" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Docking" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Grid.Core" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.LayoutControl" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Office" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Printing" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Ribbon" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.RichEdit" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="24.2.*-*" />
   </ItemGroup>
 </Project>
