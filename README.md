@@ -20,7 +20,7 @@ Theme preload slows down the application startup but speeds up the startup of su
 * [Preload Theme Resources](https://docs.devexpress.com/WPF/403439/common-concepts/themes/preload-theme-resources)
 * [Splash Screen Manager](https://docs.devexpress.com/WPF/401685/controls-and-libraries/windows-and-utility-controls/splash-screen-manager)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-synchronous-theme-preload-with-splashscreen&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-synchronous-theme-preload-with-splashscreen&~~~was_helpful=no)
 
